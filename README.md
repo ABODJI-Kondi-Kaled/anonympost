@@ -14,7 +14,7 @@ API Django REST pour la publication et la gestion de posts anonymes et de leurs 
 
 1. **Cloner le projet**
    ```bash
-   git clone <url-du-repo>
+   git clone https://github.com/ABODJI-Kondi-Kaled/anonympost
    cd anonympost/backend
    ```
 
