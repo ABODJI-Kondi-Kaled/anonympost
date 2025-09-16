@@ -1,0 +1,56 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.sqlite3
+
+# Django
+*.log
+staticfiles/
+media/
+db.sqlite3
+
+# VS Code
+.vscode/
+
+# Pyenv
+.python-version
+
+# Docker
+*.db
+*.pid
+*.seed
+*.swp
+Dockerfile
+docker-compose.yml
+
+# Test/coverage
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Migrations
+*/migrations/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.sublime-workspace
+*.sublime-project
