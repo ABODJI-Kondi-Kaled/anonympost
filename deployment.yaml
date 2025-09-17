@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anonympost-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anonympost-backend
+  template:
+    metadata:
+      labels:
+        app: anonympost-backend
+    spec:
+      containers:
+        - name: anonympost-backend
+          image: kondikaledabodji/anonympost-backend:latest
+          ports:
+          - containerPort: 8000
+          env:
+            - name: DJANGO_ENV
+              value: "development"
+            - name: DJANGO_ALLOWED_HOSTS
+              value: "192.168.49.2,localhost,127.0.0.1"
+
